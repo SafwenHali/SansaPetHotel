@@ -72,7 +72,7 @@ const Services = () => {
                 Training
               </h3>
               <div className='d-flex justify-content-center pb-3'>
-                <SecondaryBtn Value={"Register"} Type={"button"} Fn={handleNavigate}/>
+                <SecondaryBtn Value={"Register"} Type={"button"} />
               </div>
             </div>
           </div>

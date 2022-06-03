@@ -26,7 +26,8 @@ const Login = () => {
       const res = await axiosInstance.post(url, data);
       localStorage.setItem("Role", res.data.role);
       localStorage.setItem("token", res.data.token);
-      Navigate("/home");
+      if (res.data.role !== "Admin") Navigate("/home");
+      else Navigate("/admin");
       window.location.reload();
     } catch (err) {
       if (

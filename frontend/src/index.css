@@ -161,3 +161,13 @@ code {
 .customColor label {
   color: #b1dae7;
 }
+
+.hover_click {
+  background-color: #21252940;
+  transition: all 0.2s linear;
+}
+.hover_click:hover {
+  background-color: #212529;
+  color: white;
+  cursor: pointer;
+}

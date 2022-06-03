@@ -114,7 +114,7 @@ exports.getUsers = catchAsync(async (req, res, next) => {
 
   res.status(200).json({
     status: "success",
-    users,
+    data: users,
   });
 });
 
@@ -126,6 +126,6 @@ exports.getUserData = catchAsync(async (req, res, next) => {
   (foundUser.password = ""),
     res.status(201).json({
       status: "success",
-      foundUser,
+      data: foundUser,
     });
 });

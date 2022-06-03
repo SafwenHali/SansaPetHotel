@@ -7,6 +7,7 @@ const path = require("path");
 const AppError = require("./utils/appError");
 const userRouter = require("./Routes/UserRouter");
 const resRouter = require("./Routes/ReservationRouter");
+const servRouter = require("./Routes/ServiceRouter");
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.use((req, res, next) => {
 
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/reservation", resRouter);
+app.use("/api/v1/service", servRouter);
 
 app.all("*", (req, res, next) => {
   next(new AppError(`Can't Find ${req.originalUrl} on this server!`, 404));

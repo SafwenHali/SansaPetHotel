@@ -1,4 +1,0 @@
-install tailwind with command:
-npm install -D tailwindcss
-run tailwind on node js with command:
-npx tailwindcss -i ./src/style.css -o ./output.css --watch

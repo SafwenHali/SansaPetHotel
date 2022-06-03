@@ -207,7 +207,7 @@ const Subscription = () => {
             </div>
 
             <div className='d-flex justify-content-center'>
-              <SecondaryBtn Value={"Subscribe"} Type={"submit"} />
+              <SecondaryBtn Value={"Submit Booking"} Type={"submit"} />
             </div>
           </form>
         </div>
